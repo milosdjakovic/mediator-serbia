@@ -1,11 +1,43 @@
 module.exports = {
+  pathPrefix: `/medijatorserbia`,
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Svetlana Milenković`,
+    description: `Medijator`,
+    author: `Milos Djakovic`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-meta-redirect`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-classes`,
+            options: {
+              classMap: {
+                "heading[depth=1]": "text-4xl",
+                "heading[depth=2]": "subtitle",
+                paragraph: "para",
+                listItem: "li-item",
+                "list[ordered=false]": "unordered-list",
+                "list[ordered=true]": "ordered-list",
+              },
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -13,8 +45,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
