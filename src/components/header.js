@@ -1,47 +1,36 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
 
-import navigationItems from "../data/navigation-data.json"
 
-const Header = ({ siteTitle, siteDescription }) => {
+const Header = ({ siteTitle, siteDescription, quote }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+          description
+          quote {
+            text
+            author
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <header>
       <div>
-        <p>{siteDescription}</p>
-        
+        <p>{data.site.siteMetadata.description}</p>
+
         <h1>
-          <Link to="/">{siteTitle}</Link>
+          <Link to="/">{data.site.siteMetadata.title}</Link>
         </h1>
 
-        <nav>
-          {navigationItems.map((navItem, i) => {
-            if (navItem.children) {
-              return (
-                <div key={`${navItem.route}_${i}`}>
-                  <p>{navItem.name}</p>
-
-                  <div>
-                    {navItem.children.map((childItem, j) => (
-                      <Link
-                        to={childItem.route}
-                        key={`${childItem.route}_${j}`}
-                      >
-                        {childItem.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )
-            }
-
-            return (
-              <Link to={navItem.route} key={`${navItem.route}_${i}`}>
-                {navItem.name}
-              </Link>
-            )
-          })}
-        </nav>
+        <p>{data.site.siteMetadata.quote.text}</p>
+        <p>{data.site.siteMetadata.quote.author}</p>
       </div>
     </header>
   )
