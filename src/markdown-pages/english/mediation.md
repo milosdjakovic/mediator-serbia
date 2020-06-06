@@ -1,6 +1,6 @@
 ---
 title: 'Mediation'
-slug: 'mediation'
+slug: '/mediation'
 category: 'english'
 ---
 

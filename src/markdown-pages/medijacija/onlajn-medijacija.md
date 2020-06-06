@@ -1,6 +1,6 @@
 ---
 title: 'Onlajn medijacija'
-slug: 'onlajn-medijacija'
+slug: '/onlajn-medijacija'
 category: 'medijacija'
 ---
 

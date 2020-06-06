@@ -1,6 +1,6 @@
 ---
 title: 'Postupak'
-slug: 'postupak'
+slug: '/postupak'
 category: 'medijacija'
 ---
 

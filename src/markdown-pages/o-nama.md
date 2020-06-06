@@ -1,6 +1,6 @@
 ---
 title: 'O nama'
-slug: 'o-nama'
+slug: '/o-nama'
 category: ''
 ---
 

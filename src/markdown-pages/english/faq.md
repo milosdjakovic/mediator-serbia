@@ -1,6 +1,6 @@
 ---
 title: 'Faq'
-slug: 'faq'
+slug: '/faq'
 category: 'english'
 ---
 

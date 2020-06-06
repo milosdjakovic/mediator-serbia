@@ -4,48 +4,31 @@ import React from "react"
 
 import navigationItems from "../data/navigation-data.json"
 
-const Header = ({ siteTitle }) => {
-  
-
+const Header = ({ siteTitle, siteDescription }) => {
   return (
-    <header
-      style={{
-        borderBottom: "2px solid gray",
-        marginBottom: `1.45rem`,
-      }}
-    >
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `1.45rem 1.0875rem`,
-        }}
-      >
-        <h1 style={{ margin: 0 }}>
-          <Link
-            to="/"
-            style={{
-              color: `white`,
-              textDecoration: `none`,
-            }}
-          >
-            {siteTitle}
-          </Link>
+    <header>
+      <div>
+        <p>{siteDescription}</p>
+        
+        <h1>
+          <Link to="/">{siteTitle}</Link>
         </h1>
+
         <nav>
           {navigationItems.map((navItem, i) => {
             if (navItem.children) {
               return (
                 <div key={`${navItem.route}_${i}`}>
                   <p>{navItem.name}</p>
+
                   <div>
                     {navItem.children.map((childItem, j) => (
-                      <a
-                        href={childItem.route}
+                      <Link
+                        to={childItem.route}
                         key={`${childItem.route}_${j}`}
                       >
                         {childItem.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -53,12 +36,9 @@ const Header = ({ siteTitle }) => {
             }
 
             return (
-              <a
-                href={navItem.route}
-                key={`${navItem.route}_${i}`}
-              >
+              <Link to={navItem.route} key={`${navItem.route}_${i}`}>
                 {navItem.name}
-              </a>
+              </Link>
             )
           })}
         </nav>

@@ -1,6 +1,6 @@
 ---
 title: 'Česta pitanja'
-slug: 'cesta-pitanja'
+slug: '/cesta-pitanja'
 category: 'edukacija'
 ---
 

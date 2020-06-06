@@ -1,6 +1,6 @@
 ---
 title: 'Pravni okvir'
-slug: 'pravni okvir'
+slug: '/pravni-okvir'
 category: 'edukacija'
 ---
 

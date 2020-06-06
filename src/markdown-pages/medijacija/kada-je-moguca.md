@@ -1,6 +1,6 @@
 ---
 title: 'Kada je moguća'
-slug: 'kada-je-moguca'
+slug: '/kada-je-moguca'
 category: 'medijacija'
 ---
 

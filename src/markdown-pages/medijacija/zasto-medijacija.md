@@ -1,6 +1,6 @@
 ---
 title: 'Zašto medijacija'
-slug: 'zasto-medijacija'
+slug: '/zasto-medijacija'
 category: 'medijacija'
 ---
 

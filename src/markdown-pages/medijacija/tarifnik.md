@@ -1,6 +1,6 @@
 ---
 title: 'Tarifnik'
-slug: 'tarifnik'
+slug: '/tarifnik'
 category: 'medijacija'
 ---
 

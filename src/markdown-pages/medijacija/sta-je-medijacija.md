@@ -1,6 +1,6 @@
 ---
 title: 'Šta je medijacija'
-slug: 'sta-je-medijacija'
+slug: '/sta-je-medijacija'
 category: 'medijacija'
 ---
 

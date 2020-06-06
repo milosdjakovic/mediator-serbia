@@ -1,6 +1,6 @@
 ---
 title: 'Linkovi'
-slug: 'linkovi'
+slug: '/linkovi'
 category: ''
 ---
 

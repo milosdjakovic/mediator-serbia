@@ -1,6 +1,6 @@
 ---
 title: 'Areas of mediation'
-slug: 'areas-of-mediation'
+slug: '/areas-of-mediation'
 category: 'edukacija'
 ---
 
