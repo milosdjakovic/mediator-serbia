@@ -14,21 +14,21 @@ import Navigation from "./navigation"
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className="min-h-screen flex flex-col text-gray-800">
       <Header />
 
-      <div>
+      <div id="content-wrapper" className="px-10 flex w-full items-start max-w-6xl self-center mt-30 m-10">
         <Navigation />
 
-        <main>{children}</main>
+        <main className="flex-grow">{children}</main>
 
-        <footer>
+        {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        </footer> */}
       </div>
-    </>
+    </div>
   )
 }
 

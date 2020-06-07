@@ -15,16 +15,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Slabo 27px`,
-          },
-        ],
-      },
-    },
+    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -35,10 +26,11 @@ module.exports = {
               classMap: {
                 "heading[depth=1]": "text-4xl",
                 "heading[depth=2]": "subtitle",
-                paragraph: "para",
-                listItem: "li-item",
-                "list[ordered=false]": "unordered-list",
-                "list[ordered=true]": "ordered-list",
+                paragraph: "mt-4 text-lg",
+                listItem: "ml-8",
+                "list[ordered=false]": "mt-4 list-disc",
+                "list[ordered=true]": "mt-4 list-disc",
+                "link": "underline text-teal-500"
               },
             },
           },

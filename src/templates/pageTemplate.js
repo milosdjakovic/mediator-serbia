@@ -14,11 +14,9 @@ export default function Template({
       <SEO title={frontmatter.title} />
 
       <Layout>
-        <div className="">
-          <div className="">
-            <h1>{frontmatter.title}</h1>
-            <div className="" dangerouslySetInnerHTML={{ __html: html }} />
-          </div>
+        <div className="p-20">
+          <h1 className="text-4xl">{frontmatter.title}</h1>
+          <div className="mt-4" dangerouslySetInnerHTML={{ __html: html }} />
         </div>
       </Layout>
     </>

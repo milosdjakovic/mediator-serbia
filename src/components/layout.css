@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+
 body {
-  font-family: 'Slabo 27px', serif;
+  font-family: "Slabo 27px", serif;
+  background: linear-gradient(
+      rgba(84, 173, 157, 0.2) 50%,
+      rgba(33, 109, 95, 0.3)
+    ),
+    url(/images/white_wall.png);
+    min-width: 100vw;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+main {
+  background-image: url(/images/groovepaper.png);
+}
+
+#content-wrapper {
+  /* background-image: url(/images/groovepaper.png); */
+}
+
+#side-navigation {
+  background-image: url(/images/groovepaper.png);
+}
+
+table th {
+  padding: 10px 0;
+  font-size: 1.3rem;
+}
+
+table td {
+  padding-right: 30px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
