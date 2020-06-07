@@ -14,6 +14,7 @@ const Layout = ({ children }) => {
   const initialPageLoadComplete = useSelector(
     state => state.initialPageLoadComplete
   )
+
   const dispatch = useDispatch()
 
   useEffect(() => {

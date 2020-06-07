@@ -62,6 +62,7 @@ function reducer(state = initState, action) {
   }
 }
 
-const store = createStore(reducer)
-
-export default store
+// preloadedState will be passed in by the plugin
+export default preloadedState => {
+  return createStore(reducer, preloadedState)
+}
