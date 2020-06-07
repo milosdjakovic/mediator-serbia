@@ -17,17 +17,18 @@ const Layout = ({ children }) => {
     <div className="flex min-h-screen">
       <Header />
 
-      <div className="flex flex-1 mt-20">
-        <Navigation />
+      <Navigation />
 
-        <main className="flex-grow">{children}</main>
+      {/* <div className="flex flex-1 mt-20"> */}
+
+        <main className="flex-grow lg:ml-76 mt-20 flex justify-center" >{children}</main>
 
         {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer> */}
-      </div>
+      {/* </div> */}
     </div>
   )
 }

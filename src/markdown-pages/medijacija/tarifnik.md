@@ -9,4 +9,4 @@ Tarifnik možete videti  [ovde.](https://www.paragraf.rs/propisi_download/pravil
 
 Za sva nejasna pitanja o tarifniku i ostalo, možete nas kontaktirati na mejl ili pozvati telefonom.
 
-[Kontakt Strana](blog/kontakt)
+[Kontakt Strana](/kontakt)

@@ -22,6 +22,10 @@ body {
   /* background-image: url(/images/groovepaper.png); */
 }
 
+.svg-state > svg {
+  display: block;
+}
+
 table {
   overflow: auto
 }

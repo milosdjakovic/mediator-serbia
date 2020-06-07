@@ -4,8 +4,8 @@ slug: '/kontakt'
 category: ''
 ---
 
-Email: medijator.svetlana@gmail.com
+Email: &nbsp [medijator.svetlana@gmail.com](mailto:medijator.svetlana@gmail.com)
 
-<p>Skype: <a href="skype:live:medijator.svetlana?call">live:medijator.svetlana</a></p>
+Skype: &nbsp [live:medijator.svetlana](skype:live:medijator.svetlana?call)
 
-<p>Telefon: <a href="tel:+381644279178">+381 64 4279 178</a></p>
+Telefon: &nbsp [+381 64 4279 178](tel:+381644279178)

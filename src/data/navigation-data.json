@@ -8,27 +8,27 @@
     "children": [
       {
         "name": "Šta je medijacija?",
-        "route": "sta-je-medijacija"
+        "route": "/sta-je-medijacija"
       },
       {
         "name": "Zašto medijacija?",
-        "route": "zasto-medijacija"
+        "route": "/zasto-medijacija"
       },
       {
         "name": "Kada je moguća?",
-        "route": "kada-je-moguca"
+        "route": "/kada-je-moguca"
       },
       {
         "name": "Postupak",
-        "route": "postupak"
+        "route": "/postupak"
       },
       {
         "name": "Onlajn medijacija",
-        "route": "onlajn-medijacija"
+        "route": "/onlajn-medijacija"
       },
       {
         "name": "Tarifnik",
-        "route": "tarifnik"
+        "route": "/tarifnik"
       }
     ]
   },
@@ -37,36 +37,36 @@
     "children": [
       {
         "name": "Pravni okvir",
-        "route": "pravni-okvir"
+        "route": "/pravni-okvir"
       },
       {
         "name": "Česta pitanja",
-        "route": "cesta-pitanja"
+        "route": "/cesta-pitanja"
       }
     ]
   },
   {
     "name": "Kontakt",
-    "route": "kontakt"
+    "route": "/kontakt"
   },
   {
     "name": "O nama",
-    "route": "o-nama"
+    "route": "/o-nama"
   },
   {
     "name": "English",
     "children": [
       {
         "name": "Mediation",
-        "route": "mediation"
+        "route": "/mediation"
       },
       {
         "name": "Areas of mediation",
-        "route": "areas-of-mediation"
+        "route": "/areas-of-mediation"
       },
       {
         "name": "Faq",
-        "route": "faq"
+        "route": "/faq"
       }
     ]
   }

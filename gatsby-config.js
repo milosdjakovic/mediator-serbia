@@ -15,7 +15,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-catch-links`,
+      options: {
+        excludePattern: /(excluded-link|external)/,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -24,14 +29,19 @@ module.exports = {
             resolve: `gatsby-remark-classes`,
             options: {
               classMap: {
-                "heading[depth=1]": "text-4xl",
-                "heading[depth=2]": "text-2xl mt-4",
-                "heading[depth=3]": "text-xl mt-4",
-                paragraph: "mt-4 text-lg",
-                listItem: "ml-8",
-                "list[ordered=false]": "mt-4 list-disc",
-                "list[ordered=true]": "mt-4 list-disc",
-                "link": "underline text-teal-500"
+                "heading[depth=1]": `text-4xl`,
+                "heading[depth=2]": `text-2xl mt-4`,
+                "heading[depth=3]": `text-xl mt-4`,
+                paragraph: `mt-4 text-lg`,
+                listItem: `ml-8`,
+                "table": `mt-4`,
+                "list[ordered=false]": `mt-4 list-disc`,
+                "list[ordered=true]": `mt-4 list-disc`,
+                "link": `underline text-teal-500`,
+                "blockquote": `mt-4 px-6 pt-2 pb-4 bg-teal-100 border-l-2 border-teal-500`,
+                "blockquote > paragraph:first-child": `text-2xl text-teal-600`,
+                "blockquote > paragraph:nth-child(2)": `text-gray-600 text-right`,
+                "hr": `border-t-2 opacity-25 border-teal-900`
               },
             },
           },

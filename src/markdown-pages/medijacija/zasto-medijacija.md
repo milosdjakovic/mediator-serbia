@@ -23,6 +23,8 @@ Medijacija je:
 - Manje formalna od suda
 - Fokus je na interesima i fokusima strana
   
+&nbsp
+
 ## Razlikovanje sudskog postupka i medijacije:  
 
 <!-- ### SUDSKI POSTUPAK:
@@ -49,14 +51,14 @@ Medijacija je:
 - Poštuju se lične vrednosti, kultura, tradicija i volja strana
 - Odnosi postaju bolji ili ostaju isti -->
 
-|SUDSKI POSTUPAK | POSREDOVANJE  |
-| ----------------|--------------|
-| Formalan postupak | Manje formalan, u prijatnom ambijentu |
-| Prinudan | Dobrovoljan |
-| Po pravilu, javan | Privatan i poverljiv |
-| Donosi se presuda, žalba često odlaže izvršenje | Zaključuje se sporazum sa svojstvom izvršne isprave |
-| Dugotrajan | Brz i hitan |
-| Jedna(obe) strane nezadovoljne | Vodi se voljom strana, jeftin |
-| Nepredvidiv | Rešenje obostrano prihvatljivo |
-| Zanemarivanje ličnih vrednosti, kulture, običaja | Poštuju se lične vrednosti, kultura, tradicija i volja strana |
-| Pogoršanje odnosa | Odnosi postaju bolji ili ostaju isti |
+| SUDSKI POSTUPAK                                   | POSREDOVANJE                                                    |
+| ------------------------------------------------- | --------------------------------------------------------------- |
+| Formalan postupak                                 | Manje formalan, u prijatnom ambijentu                           |
+| Prinudan                                          | Dobrovoljan                                                     |
+| Po pravilu, javan                                 | Privatan i poverljiv                                            |
+| Donosi se presuda, žalba često odlaže izvršenje   | Zaključuje se sporazum sa svojstvom izvršne isprave             |
+| Dugotrajan                                        | Brz i hitan                                                     |
+| Jedna(obe) strane nezadovoljne                    | Vodi se voljom strana, jeftin                                   |
+| Nepredvidiv                                       | Rešenje obostrano prihvatljivo                                  |
+| Zanemarivanje ličnih vrednosti, kulture, običaja  | Poštuju se lične vrednosti, kultura, tradicija i volja strana   |
+| Pogoršanje odnosa                                 | Odnosi postaju bolji ili ostaju isti                            |

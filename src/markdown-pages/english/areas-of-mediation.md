@@ -20,5 +20,7 @@ Areas of mediation are:
 - Discrimination
 - For further questions, please contact us via email or cell-phone.
 
+&nbsp
+
 ---
-[Our conntact page](blog/kontakt)
+[Our conntact page](/kontakt)

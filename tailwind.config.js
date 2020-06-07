@@ -4,6 +4,8 @@ module.exports = {
     extend: {
       margin: {
         "30": "7.5rem",
+        "76": "19rem",
+        "-76": "-19rem",
       },
       inset: {
         "30": "7.5rem",
