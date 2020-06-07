@@ -27,7 +27,8 @@ const Layout = ({ children }) => {
         defaults: { duration: 0.8, ease: "elastic.inOut(0.4 , 0.8)" },
       })
 
-      tl.from("#top-header", { opacity: 0, y: "-2rem" })
+      tl.from("#___gatsby", { opacity: 0, duration: 0.2 })
+      tl.from("#top-header", { opacity: 0, y: "-2rem" }, '-=0.18')
       tl.from("#header-logo", { x: -80, opacity: 0 }, "-=0.5")
       if (window.innerWidth > 1024) {
         tl.from("#side-panel-navigation", { opacity: 0, x: "-2rem" }, "-=0.5")
