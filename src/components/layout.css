@@ -1,25 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
 
 body {
   font-family: "Slabo 27px", serif;
-  background: linear-gradient(
-      rgba(84, 173, 157, 0.2) 50%,
-      rgba(33, 109, 95, 0.3)
-    ),
-    url(/images/white_wall.png);
-    background-attachment: fixed;
-}
-
-#page-content {
-  background-image: url(/images/groovepaper.png);
-}
-
-#content-wrapper {
-  /* background-image: url(/images/groovepaper.png); */
-}
-
-#side-navigation {
-  /* background-image: url(/images/groovepaper.png); */
+  background-attachment: fixed;
 }
 
 .svg-state > svg {
@@ -27,7 +10,7 @@ body {
 }
 
 table {
-  overflow: auto
+  overflow: auto;
 }
 
 table th {

@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/medijatorserbia`,
+  pathPrefix: `/mediatorserbia`,
   siteMetadata: {
     title: `Svetlana Milenković`,
     description: `Medijator`,
@@ -21,7 +21,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
-    `gatsby-plugin-page-transitions`,
     {
       resolve: `gatsby-plugin-catch-links`,
       options: {

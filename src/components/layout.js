@@ -1,7 +1,6 @@
 import React, { useEffect } from "react"
 import PropTypes from "prop-types"
 import { useSelector, useDispatch } from "react-redux"
-import PageTransition from "gatsby-plugin-page-transitions"
 import gsap from "gsap"
 
 import Header from "./header"
@@ -9,6 +8,9 @@ import "./layout.css"
 import Navigation from "./navigation"
 import MobileNavigation from "./mobileNavigation"
 import SidePanel from "./sidePanel"
+
+// Assets
+import wallBg from '../images/white_wall.png';
 
 const Layout = ({ children }) => {
   const initialPageLoadComplete = useSelector(
@@ -29,7 +31,7 @@ const Layout = ({ children }) => {
       })
 
       tl.from("#___gatsby", { opacity: 0, duration: 0.2 })
-      tl.from("#top-header", { opacity: 0, y: "-2rem" }, '-=0.18')
+      tl.from("#top-header", { opacity: 0, y: "-2rem" }, "-=0.18")
       tl.from("#header-logo", { x: -80, opacity: 0 }, "-=0.5")
       if (window.innerWidth > 1024) {
         tl.from("#side-panel-navigation", { opacity: 0, x: "-2rem" }, "-=0.5")
@@ -39,7 +41,16 @@ const Layout = ({ children }) => {
   })
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div
+      className="flex flex-col min-h-screen"
+      style={{
+        background: `linear-gradient(
+        rgba(84, 173, 157, 0.2) 50%,
+        rgba(33, 109, 95, 0.3)
+      ),
+      url(${wallBg})`,
+      }}
+    >
       <Header />
 
       <SidePanel>
@@ -50,25 +61,9 @@ const Layout = ({ children }) => {
         <Navigation />
       </MobileNavigation>
 
-      <PageTransition
-        defaultStyle={{
-          transition:
-            "opacity 300ms cubic-bezier(0.47, 0, 0.75, 0.72), transform 300ms cubic-bezier(0.47, 0, 0.75, 0.72)",
-          transform: "translateY(10px)",
-          opacity: 0,
-        }}
-        transitionStyles={{
-          entering: { transform: "translateY(0)", opacity: 1 },
-          entered: { transform: "translateY(0)", opacity: 1 },
-          exiting: { transform: "translateY(10px)", opacity: 0 },
-          exited: { transform: "translateY(10px)", opacity: 0 },
-        }}
-        transitionTime={300}
-      >
-        <main className="z-10 flex-grow lg:ml-76 mt-20 flex justify-center">
-          {children}
-        </main>
-      </PageTransition>
+      <main className="z-10 flex-grow lg:ml-76 mt-20 flex justify-center">
+        {children}
+      </main>
 
       {/* <footer className="lg:ml-76 -mb-76 pb-4 flex justify-center mt-64">
         <p>
