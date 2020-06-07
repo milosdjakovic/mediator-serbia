@@ -10,7 +10,7 @@ import MobileNavigation from "./mobileNavigation"
 import SidePanel from "./sidePanel"
 
 // Assets
-import wallBg from '../images/white_wall.png';
+import wallBg from "../images/white_wall.png"
 
 const Layout = ({ children }) => {
   const initialPageLoadComplete = useSelector(

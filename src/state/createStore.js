@@ -30,8 +30,8 @@ function animateMobileMenu(mobileMenuVisible) {
     )
     tl.fromTo(
       "#mobile-navigation-backdrop",
-      { opacity: 1, display: "block" },
-      { opacity: 0, duration: 0.1 }
+      { opacity: 1,  },
+      { opacity: 0, display: "none", duration: 0.1 }
     )
   }
 }

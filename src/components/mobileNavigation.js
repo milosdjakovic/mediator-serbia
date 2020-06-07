@@ -1,43 +1,8 @@
-import React, { useEffect } from "react"
-import { useSelector, useDispatch } from "react-redux"
-import gsap from "gsap"
+import React from "react"
+import { useDispatch } from "react-redux"
 
 const MobileNavigation = ({ children }) => {
-  const initialPageLoadComplete = useSelector(
-    state => state.initialPageLoadComplete
-  )
-  const mobileMenuVisible = useSelector(state => state.mobileMenuVisible)
   const dispatch = useDispatch()
-
-  // useEffect(() => {
-    // const tl = gsap.timeline({
-    //   defaults: { duration: 0.26 },
-    // })
-
-    // if (mobileMenuVisible) {
-    //   tl.fromTo(
-    //     "#mobile-navigation-backdrop",
-    //     { opacity: 0 },
-    //     { opacity: 1, display: "block", duration: 0.1 }
-    //   )
-    //   tl.fromTo(
-    //     "#mobile-navigation",
-    //     { x: -50, opacity: 0 },
-    //     { x: 0, opacity: 1 }
-    //   )
-    // } else {
-    //   tl.fromTo(
-    //     "#mobile-navigation",
-    //     { x: 0, opacity: 1 },
-    //     { x: -50, opacity: 0 }
-    //   )
-    //   tl.fromTo(
-    //     "#mobile-navigation-backdrop",
-    //     { opacity: 1, display: "block" },
-    //     { opacity: 0, duration: 0.1 }
-    //   )
-    // }
-  // }, [initialPageLoadComplete, mobileMenuVisible])
 
   return (
     <div
