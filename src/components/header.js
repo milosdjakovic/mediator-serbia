@@ -23,7 +23,7 @@ const Header = () => {
   `)
 
   return (
-    <header className="z-30 fixed top-0 inset-x-0 bg-gray-900 h-20 text-gray-100 flex justify-center shadow-md">
+    <header id="top-header" className="z-40 fixed top-0 inset-x-0 bg-gray-900 h-20 text-gray-100 flex justify-center shadow-md">
       <div className="flex justify-between items-center flex-grow mx-4 sm:mx-8 md:mx-12 xl:mx-20">
         <div className="mt-1 flex">
           <MediatorLogo className="w-12 mb-1 hidden sm:block" />

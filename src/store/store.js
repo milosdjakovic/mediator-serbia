@@ -1,11 +1,17 @@
 import { createStore } from "redux"
 
 const initState = {
+  initialPageLoadComplete: false,
   mobileMenuVisible: false,
 }
 
 function reducer(state = initState, action) {
   switch (action.type) {
+    case "INITIAL_PAGE_LOADED":
+      return {
+        ...state,
+        initialPageLoadComplete: true
+      }
     case "TOGGLE_MOBILE_MENU":
       return {
         ...state,
