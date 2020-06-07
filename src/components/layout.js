@@ -14,13 +14,13 @@ import Navigation from "./navigation"
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen flex flex-col text-gray-800">
+    <div className="text-gray-800 min-h-screen max-w-screen flex">
       <Header />
 
-      <div id="content-wrapper" className="px-10 flex w-full items-start max-w-6xl self-center mt-30 m-10">
+      <div className="flex flex-1 mt-20">
         <Navigation />
 
-        <main className="flex-grow">{children}</main>
+        <main className="flex-1 flex justify-center">{children}</main>
 
         {/* <footer>
           © {new Date().getFullYear()}, Built with

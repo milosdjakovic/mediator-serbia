@@ -12,7 +12,7 @@ body {
     background-attachment: fixed;
 }
 
-main {
+#page-content {
   background-image: url(/images/groovepaper.png);
 }
 
@@ -21,7 +21,7 @@ main {
 }
 
 #side-navigation {
-  background-image: url(/images/groovepaper.png);
+  /* background-image: url(/images/groovepaper.png); */
 }
 
 table th {

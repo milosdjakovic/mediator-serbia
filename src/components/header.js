@@ -22,8 +22,8 @@ const Header = ({ siteTitle, siteDescription, quote }) => {
 
   return (
     <header className="z-30 fixed top-0 inset-x-0 bg-gray-900 text-gray-100 flex justify-center shadow-md">
-      <div className="flex justify-between items-center flex-grow max-w-6xl mx-10 h-20">
-        <div className="ml-10">
+      <div className="flex justify-between items-center flex-grow mx-10 h-20">
+        <div className="mt-1">
           <p className="bold">{data.site.siteMetadata.description}</p>
   
           <h1 className="text-2xl -mt-2">

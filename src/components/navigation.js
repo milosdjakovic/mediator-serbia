@@ -4,14 +4,14 @@ import navigationItems from "../data/navigation-data.json"
 
 const Navigation = () => {
   return (
-    <nav id="side-navigation" className="lg:flex hidden flex-col sticky h-full border-r-2 mr-6 p-10 pr-20 top-30">
+    <nav id="side-navigation" className="flex flex-col flex-shrink-0 bg-gray-800 text-gray-300 w-56 p-10 box-content">
       {navigationItems.map((navItem, i) => {
         if (navItem.children) {
           return (
             <div className="" key={`${navItem.route}_${i}`}>
               <p className="text-lg border-b-2 text-gray-500 border-gray-600 my-1">{navItem.name}</p>
 
-              <div className="ml-4 flex flex-col truncate">
+              <div className="ml-4 flex flex-col">
                 {navItem.children.map((childItem, j) => (
                   <Link 
                     to={`/${childItem.route}`} 
