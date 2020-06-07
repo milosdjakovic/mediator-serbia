@@ -51,7 +51,7 @@ Medijacija je:
 - Poštuju se lične vrednosti, kultura, tradicija i volja strana
 - Odnosi postaju bolji ili ostaju isti -->
 
-| SUDSKI POSTUPAK                                   | POSREDOVANJE                                                    |
+| SUDSKI POSTUPAK :                                 | POSREDOVANJE :                                                  |
 | ------------------------------------------------- | --------------------------------------------------------------- |
 | Formalan postupak                                 | Manje formalan, u prijatnom ambijentu                           |
 | Prinudan                                          | Dobrovoljan                                                     |

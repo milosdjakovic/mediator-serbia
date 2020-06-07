@@ -34,7 +34,7 @@ module.exports = {
                 "heading[depth=3]": `text-xl mt-4`,
                 paragraph: `mt-4 text-lg`,
                 listItem: `ml-8`,
-                "table": `mt-4`,
+                "table": `mt-4 text-left`,
                 "list[ordered=false]": `mt-4 list-disc`,
                 "list[ordered=true]": `mt-4 list-disc`,
                 "link": `underline text-teal-500`,
