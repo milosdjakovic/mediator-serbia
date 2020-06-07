@@ -20,7 +20,7 @@ const MobileNavigation = ({ navigationVisible, setNavigationVisibility }) => {
           if (navItem.children) {
             return (
               <div className="mt-3" key={`${navItem.route}_${i}`}>
-                <p className="border-b-2 pb-1 mb-2 text-gray-400 border-gray-600 my-1">
+                <p className="border-b-2 pb-1 mb-2 text-gray-500 border-gray-600 my-1">
                   {navItem.name}
                 </p>
 
