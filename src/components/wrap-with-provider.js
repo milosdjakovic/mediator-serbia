@@ -1,5 +1,4 @@
-import React, { useEffect } from "react"
-import gsap from "gsap"
+import React from "react"
 import { Provider } from "react-redux"
 
 import store from "../store/store"
