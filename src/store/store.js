@@ -1,7 +1,7 @@
 import { createStore } from "redux"
 
 const initState = {
-  mobileMenuVisible: true,
+  mobileMenuVisible: false,
 }
 
 function reducer(state = initState, action) {

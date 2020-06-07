@@ -6,6 +6,7 @@ import Header from "./header"
 import "./layout.css"
 import Navigation from "./navigation"
 import MobileNavigation from "./mobileNavigation"
+import SidePanel from "./sidePanel"
 
 const Layout = ({ children }) => {
   const [navigationVisible, setNavigationVisibility] = useState(false)
@@ -16,9 +17,15 @@ const Layout = ({ children }) => {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <Navigation />
+      <SidePanel>
+        <Navigation />
+      </SidePanel>
 
-      {mobileMenuVisible && <MobileNavigation />}
+      {mobileMenuVisible && (
+        <MobileNavigation>
+          <Navigation />
+        </MobileNavigation>
+      )}
 
       <main className="flex-grow lg:ml-76 mt-20 flex justify-center">
         {children}

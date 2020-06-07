@@ -2,14 +2,15 @@ import React from "react"
 import { useSelector, useDispatch } from 'react-redux';
 
 
-const MenuButton = ({ navigationVisible, setNavigationVisibility, className }) => {
+const MenuButton = ({ className }) => {
   const mobileMenuVisible = useSelector(state => state.mobileMenuVisible)
   const dispatch = useDispatch();
 
   return (
     <button
       onClick={() => dispatch({ type: 'TOGGLE_MOBILE_MENU' })}
-      className={`${className} hover:bg-teal-600 hover:bg-opacity-50 focus:bg-teal-600 focus:bg-opacity-50 focus:outline-none`}
+      className={`${className} h-full hover:text-teal-300 focus:text-teal-300  focus:outline-none`}
+      style={{ transition: 'color 300ms' }}
     >
       {!mobileMenuVisible ? (
         <svg
