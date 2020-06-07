@@ -4,7 +4,7 @@ import navigationItems from "../data/navigation-data.json"
 
 const Navigation = () => {
   return (
-    <nav id="side-navigation" className="flex flex-col flex-shrink-0 bg-gray-800 text-gray-300 w-56 p-10 box-content">
+    <nav id="side-navigation" className="hidden lg:flex flex-col flex-shrink-0 bg-gray-800 text-gray-300 w-56 p-10 box-content">
       {navigationItems.map((navItem, i) => {
         if (navItem.children) {
           return (

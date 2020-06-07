@@ -25,7 +25,8 @@ module.exports = {
             options: {
               classMap: {
                 "heading[depth=1]": "text-4xl",
-                "heading[depth=2]": "subtitle",
+                "heading[depth=2]": "text-2xl mt-4",
+                "heading[depth=3]": "text-xl mt-4",
                 paragraph: "mt-4 text-lg",
                 listItem: "ml-8",
                 "list[ordered=false]": "mt-4 list-disc",

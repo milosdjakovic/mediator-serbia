@@ -7,8 +7,6 @@ body {
       rgba(33, 109, 95, 0.3)
     ),
     url(/images/white_wall.png);
-    min-width: 100vw;
-    min-height: 100vh;
     background-attachment: fixed;
 }
 
@@ -24,6 +22,10 @@ body {
   /* background-image: url(/images/groovepaper.png); */
 }
 
+table {
+  overflow: auto
+}
+
 table th {
   padding: 10px 0;
   font-size: 1.3rem;
@@ -31,6 +33,6 @@ table th {
 
 table td {
   padding-right: 30px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }

@@ -6,7 +6,11 @@ category: 'medijacija'
 
 Prvenstveno treba imati u vidu da sud nije jedini način da rešite spor.
 
-Često tokom i nakon rešavanja spora u sudu dolazi do ponavljanja konflikta, pojačavanja netrpeljivosti, u privrednim sporovima porast kamate, gubitak poslovnog imena, klijentele, u ličnim sporovima prekid odnosa i samim tim, koliko god da je neki spor rešen na papiru, neće uvek biti rešen u realnom životu niti će strane biti zadovoljne ishodom.
+Često tokom i nakon rešavanja spora u sudu dolazi do ponavljanja konflikta, 
+pojačavanja netrpeljivosti, u privrednim sporovima porast kamate, gubitak 
+poslovnog imena, klijentele, u ličnim sporovima prekid odnosa i samim tim, 
+koliko god da je neki spor rešen na papiru, neće uvek biti rešen u realnom 
+životu niti će strane biti zadovoljne ishodom.
 
 Medijacija je:
 
@@ -18,12 +22,32 @@ Medijacija je:
 - Brža i jednostavnija od sudskog postupka
 - Manje formalna od suda
 - Fokus je na interesima i fokusima strana
+  
+## Razlikovanje sudskog postupka i medijacije:  
 
-<br>
+<!-- ### SUDSKI POSTUPAK:
 
-#### Razlikovanje sudskog postupka i medijacije:
+- Formalan postupak
+- Prinudan
+- Po pravilu, javan
+- Donosi se presuda, žalba često odlaže izvršenje
+- Dugotrajan 
+- Jedna(obe) strane nezadovoljne
+- Nepredvidiv
+- Zanemarivanje
+- Pogoršanje odnosa
 
-<br>
+### POSREDOVANJE:
+
+- Manje formalan, u prijatnom ambijentu
+- Dobrovoljan
+- Privatan i poverljiv
+- Zaključuje se sporazum sa svojstvom izvršne isprave
+- Brz i hitan
+- Vodi se voljom strana, jeftin
+- Rešenje obostrano prihvatljivo
+- Poštuju se lične vrednosti, kultura, tradicija i volja strana
+- Odnosi postaju bolji ili ostaju isti -->
 
 |SUDSKI POSTUPAK | POSREDOVANJE  |
 | ----------------|--------------|
