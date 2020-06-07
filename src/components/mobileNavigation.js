@@ -1,12 +1,16 @@
 import React from "react"
 import NavLink from "./navLink"
 import navigationItems from "../data/navigation-data.json"
+import { useDispatch } from 'react-redux'
 
-const MobileNavigation = ({ navigationVisible, setNavigationVisibility }) => {
+
+const MobileNavigation = () => {
+  const dispatch = useDispatch();
+
   return (
     <div
       className="bg-gray-800 bg-opacity-50 fixed inset-0"
-      onClick={() => setNavigationVisibility(!navigationVisible)}
+      onClick={() => dispatch({type: 'SET_MOBILE_MENU_VISIBILITY', mobileMenuVisible: false})}
       role=""
     >
       <nav

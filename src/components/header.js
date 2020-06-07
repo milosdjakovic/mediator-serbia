@@ -2,10 +2,11 @@ import { Link } from "gatsby"
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+
 import MediatorLogo from "./mediatorLogo"
 import MenuButton from "./menuButton"
 
-const Header = ({ navigationVisible, setNavigationVisibility }) => {
+const Header = () => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -43,11 +44,7 @@ const Header = ({ navigationVisible, setNavigationVisibility }) => {
           </p>
         </blockquote>
 
-        <MenuButton
-          className="lg:hidden"
-          navigationVisible={navigationVisible}
-          setNavigationVisibility={setNavigationVisibility}
-        />
+        <MenuButton className="lg:hidden" />
       </div>
     </header>
   )

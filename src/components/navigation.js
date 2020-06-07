@@ -2,7 +2,7 @@ import React from "react"
 import navigationItems from "../data/navigation-data.json"
 import NavLink from './navLink';
 
-const Navigation = ({ navigationVisible, setNavigationVisibility }) => {
+const Navigation = () => {
   return (
     <nav
       id="side-navigation"

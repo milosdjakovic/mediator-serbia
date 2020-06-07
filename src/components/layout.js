@@ -1,12 +1,6 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React, { useState } from "react"
 import PropTypes from "prop-types"
+import { useSelector } from "react-redux"
 
 import Header from "./header"
 import "./layout.css"
@@ -16,24 +10,15 @@ import MobileNavigation from "./mobileNavigation"
 const Layout = ({ children }) => {
   const [navigationVisible, setNavigationVisibility] = useState(false)
 
+  const mobileMenuVisible = useSelector(state => state.mobileMenuVisible)
+
   return (
     <div className="flex flex-col min-h-screen">
-      <Header
-        navigationVisible={navigationVisible}
-        setNavigationVisibility={setNavigationVisibility}
-      />
+      <Header />
 
-      <Navigation
-        navigationVisible={navigationVisible}
-        setNavigationVisibility={setNavigationVisibility}
-      />
+      <Navigation />
 
-      {navigationVisible && (
-        <MobileNavigation
-          navigationVisible={navigationVisible}
-          setNavigationVisibility={setNavigationVisibility}
-        />
-      )}
+      {mobileMenuVisible && <MobileNavigation />}
 
       <main className="flex-grow lg:ml-76 mt-20 flex justify-center">
         {children}
@@ -41,9 +26,8 @@ const Layout = ({ children }) => {
 
       <footer className="lg:ml-76 -mb-76 pb-4 flex justify-center mt-64">
         <p>
-          © {new Date().getFullYear()},
-          {` `}
-          <a 
+          © {new Date().getFullYear()},{` `}
+          <a
             href="https://www.github.com/milosdjakovic"
             className="underline text-teal-600"
           >
