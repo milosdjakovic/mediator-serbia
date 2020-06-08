@@ -23,12 +23,17 @@ const Header = () => {
   `)
 
   return (
-    <header id="top-header" className="fixed inset-x-0 top-0 z-40 flex justify-center h-20 text-gray-100 bg-gray-900 shadow-md">
+    <header
+      id="top-header"
+      className="fixed inset-x-0 top-0 z-40 flex justify-center h-20 text-gray-100 bg-gray-900 shadow-md"
+    >
       <div className="flex items-center justify-between flex-grow mx-4 sm:mx-8 md:mx-12 xl:mx-10">
-        <div className="flex mb-1">
+        {/* <div className="flex mb-1"> */}
+        <div className="flex items-center">
           <MediatorLogo className="hidden w-12 mb-1 sm:block" />
 
-          <div className="flex flex-col mb-1 ml-4 jsutify-center">
+          {/* <div className="flex flex-col items-center mb-1 ml-4 jsutify-center"></div> */}
+          <div className="mb-3 ml-4">
             <p className="bold">{data.site.siteMetadata.description}</p>
 
             <h1 className="mt-1 text-2xl leading-3">
