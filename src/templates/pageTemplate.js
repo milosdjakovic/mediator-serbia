@@ -22,7 +22,7 @@ export default function Template({
             backgroundImage: `url(${paperBg})`
           }}
           id="page-content" 
-          className="shadow-md flex-grow max-w-5xl text-lg p-4 m-4 sm:p-8 sm:m-8 md:m-12 md:p-12 xl:p-20 xl:m-20"
+          className="flex-grow max-w-5xl px-6 pt-4 pb-12 m-4 text-lg shadow-md sm:p-8 sm:m-8 md:m-12 md:p-12 xl:p-20 xl:m-20"
         >
           <h1 className="text-4xl">{frontmatter.title}</h1>
           <div className="mt-4" dangerouslySetInnerHTML={{ __html: html }} />
