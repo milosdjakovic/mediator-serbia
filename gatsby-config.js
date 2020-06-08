@@ -4,6 +4,7 @@ module.exports = {
     title: `Svetlana Milenković`,
     description: `Medijator`,
     author: `Milos Djakovic`,
+    image: `/images/mediator-banner.jpg`,
     quote: {
       text: `"Mnogi ljudi ne slušaju da bi razumeli, već da bi odgovorili"`,
       author: `Stiven R. Kovi`,

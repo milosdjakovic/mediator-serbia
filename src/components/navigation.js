@@ -8,7 +8,10 @@ const Navigation = () => {
       {navigationItems.map((navItem, i) => {
         if (navItem.children) {
           return (
-            <div className="my-5">
+            <div 
+              className="my-5"
+              key={`${navItem.route}_${i}`}
+            >
               <p className="mb-3 text-teal-300 border-b-2 border-teal-300 ">
                 {navItem.name}
               </p>

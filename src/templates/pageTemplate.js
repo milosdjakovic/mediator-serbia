@@ -1,10 +1,10 @@
-import React from "react"
+import React, { useRef, useState, useEffect } from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 // Assets
-import paperBg from '../images/groovepaper.png'
+import paperBg from "../images/groovepaper.png"
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
@@ -12,16 +12,29 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
 
+  const pageContents = useRef(null)
+  const [pageDescription, setPageDescription] = useState("")
+
+  useEffect(() => {
+    const firstSentanceFromFirstParagraph = pageContents.current.querySelector('p').textContent;
+
+    setPageDescription(firstSentanceFromFirstParagraph)
+  }, [html])
+
   return (
     <>
-      <SEO title={frontmatter.title} />
+      <SEO 
+        title={frontmatter.title} 
+        description={pageDescription}
+      />
 
       <Layout>
-        <div 
+        <div
           style={{
-            backgroundImage: `url(${paperBg})`
+            backgroundImage: `url(${paperBg})`,
           }}
-          id="page-content" 
+          ref={pageContents}
+          id="page-content"
           className="flex-grow max-w-5xl px-6 pt-4 pb-12 m-4 text-lg shadow-md sm:p-8 sm:m-8 md:m-12 md:p-12 xl:p-20 xl:m-20"
         >
           <h1 className="text-4xl">{frontmatter.title}</h1>
