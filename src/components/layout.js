@@ -63,11 +63,11 @@ const Layout = ({ children }) => {
         <Navigation />
       </MobileNavigation>
 
-      <main className="z-10 flex justify-center flex-grow mt-20 mb-64 lg:ml-76">
+      <main className="z-10 flex items-start justify-center flex-grow h-screen pt-20 lg:pl-76">
         {children}
       </main>
 
-      <footer className="flex justify-center pb-8 lg:ml-76">
+      <footer className="flex justify-center mt-64 mb-8 lg:pl-76">
         <p>
           © {new Date().getFullYear()},{` `}
           <a
