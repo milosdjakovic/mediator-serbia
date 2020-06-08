@@ -63,7 +63,7 @@ const Layout = ({ children }) => {
         <Navigation />
       </MobileNavigation>
 
-      <main className="z-10 flex items-start justify-center flex-grow h-screen pt-20 lg:pl-76">
+      <main className="flex items-start justify-center flex-grow min-h-screen pt-20 lg:pl-76">
         {children}
       </main>
 
