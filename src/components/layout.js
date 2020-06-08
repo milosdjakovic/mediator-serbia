@@ -25,6 +25,8 @@ const Layout = ({ children }) => {
 
   useEffect(() => {
     if (!initialPageLoadComplete) {
+      gsap.to('body', { opacity: 1 })
+
       const tl = gsap.timeline({
         delay: 0.2,
         defaults: { duration: 0.8, ease: "elastic.inOut(0.4 , 0.8)" },
@@ -61,21 +63,21 @@ const Layout = ({ children }) => {
         <Navigation />
       </MobileNavigation>
 
-      <main className="z-10 flex-grow lg:ml-76 mt-20 flex justify-center">
+      <main className="z-10 flex justify-center flex-grow mt-20 mb-64 lg:ml-76">
         {children}
       </main>
 
-      {/* <footer className="lg:ml-76 -mb-76 pb-4 flex justify-center mt-64">
+      <footer className="flex justify-center pb-8 lg:ml-76">
         <p>
           © {new Date().getFullYear()},{` `}
           <a
             href="https://www.github.com/milosdjakovic"
-            className="underline text-teal-600"
+            className="text-teal-600 underline"
           >
             Miloš Đaković
           </a>
         </p>
-      </footer> */}
+      </footer>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 ---
 title: 'Kontakt'
-slug: '//kontakt'
+slug: '/kontakt'
 category: ''
 ---
 

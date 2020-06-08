@@ -3,6 +3,7 @@
 body {
   font-family: "Slabo 27px", serif;
   background-attachment: fixed;
+  opacity: 0;
 }
 
 .svg-state > svg {
