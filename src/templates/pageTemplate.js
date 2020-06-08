@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react"
+import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -12,28 +12,15 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { frontmatter, html } = markdownRemark
 
-  const pageContents = useRef(null)
-  const [pageDescription, setPageDescription] = useState("")
-
-  useEffect(() => {
-    const firstSentanceFromFirstParagraph = pageContents.current.querySelector('p').textContent;
-
-    setPageDescription(firstSentanceFromFirstParagraph)
-  }, [html])
-
   return (
     <>
-      <SEO 
-        title={frontmatter.title} 
-        description={pageDescription}
-      />
+      <SEO title={frontmatter.title} />
 
       <Layout>
         <div
           style={{
             backgroundImage: `url(${paperBg})`,
           }}
-          ref={pageContents}
           id="page-content"
           className="flex-grow max-w-5xl px-6 pt-4 pb-12 m-4 text-lg shadow-md sm:p-8 sm:m-8 md:m-12 md:p-12 xl:p-20 xl:m-20"
         >
