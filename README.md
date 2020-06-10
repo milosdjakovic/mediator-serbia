@@ -1,7 +1,7 @@
 # Mediator Serbia
 Info on mediation process.
 
-<img alt="Hogar logo" src="./src/images/mediator-logo.svg" width="160" />
+<img alt="Mediator Serbia logo" src="./src/images/mediator-logo.svg" width="160" />
 
 Built with
 [GatsbyJS](https://www.gatsbyjs.org/),
