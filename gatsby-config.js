@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: `/mediatorserbia`,
   siteMetadata: {
     title: `Svetlana Milenković`,
-    description: `Medijator - Svetlana Milenković`,
+    description: `Medijator`,
     author: `Milos Djakovic`,
     image: `/images/mediator-banner.jpg`,
     quote: {
